@@ -86,7 +86,7 @@ F 3 "" H 7800 1450 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pspice:INDUCTOR L1
+L Circuit_layout-rescue:INDUCTOR-pspice L1
 U 1 1 5C50F1A0
 P 8900 1950
 F 0 "L1" H 8900 2050 50  0000 C CNN
@@ -110,12 +110,12 @@ $EndComp
 $Comp
 L conn:Conn_01x05 J1
 U 1 1 5C50FB6B
-P 8750 1250
-F 0 "J1" H 8750 1550 50  0000 C CNN
-F 1 "ICSP" H 8750 950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 8750 1250 50  0001 C CNN
-F 3 "" H 8750 1250 50  0001 C CNN
-	1    8750 1250
+P 8800 900
+F 0 "J1" H 8800 1200 50  0000 C CNN
+F 1 "ICSP" H 8800 600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 8800 900 50  0001 C CNN
+F 3 "" H 8800 900 50  0001 C CNN
+	1    8800 900 
 	-1   0    0    1   
 $EndComp
 Text Label 6200 2000 1    39   ~ 0
@@ -146,17 +146,17 @@ Text Label 5400 4300 0    47   ~ 0
 PGEC
 Text Label 5400 4400 0    47   ~ 0
 PGED
-Text Label 9050 1050 0    47   ~ 0
+Text Label 9100 700  0    47   ~ 0
 ~MCLR
 Text Label 5400 2400 0    47   ~ 0
 ~MCLR
-Text Label 9050 1150 0    47   ~ 0
+Text Label 9100 800  0    47   ~ 0
 3.3v
-Text Label 9050 1250 0    47   ~ 0
+Text Label 9100 900  0    47   ~ 0
 RTN
-Text Label 9050 1350 0    47   ~ 0
+Text Label 9100 1000 0    47   ~ 0
 PGEC
-Text Label 9050 1450 0    47   ~ 0
+Text Label 9100 1100 0    47   ~ 0
 PGED
 $Comp
 L conn:Conn_01x15 J2
@@ -365,149 +365,91 @@ Text Label 9600 2100 0    47   ~ 0
 Text Label 9600 2200 0    47   ~ 0
 RTN
 $Comp
-L conn:Conn_01x06 J6
-U 1 1 5C51A1F8
-P 1500 1150
-F 0 "J6" H 1500 1450 50  0000 C CNN
-F 1 "Conn_BoardJ36" H 1500 750 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 1500 1150 50  0001 C CNN
-F 3 "" H 1500 1150 50  0001 C CNN
-	1    1500 1150
-	1    0    0    -1  
-$EndComp
-Text Label 950  950  0    47   ~ 0
-CAN_H
-Text Label 950  1050 0    47   ~ 0
-CAN_L
-NoConn ~ 1300 1150
-NoConn ~ 1300 1250
-Text Label 950  1350 0    47   ~ 0
-24v
-Text Label 950  1450 0    47   ~ 0
-RTN
-NoConn ~ 1300 2050
-Text Label 950  1950 0    47   ~ 0
-BP
-Text Label 950  2150 0    47   ~ 0
-APPS1_10
-Text Label 950  2250 0    47   ~ 0
-APPS1
-Text Label 950  2350 0    47   ~ 0
-APPS1_RTN
-Text Label 950  2450 0    47   ~ 0
-APPS2_5
-Text Label 950  2550 0    47   ~ 0
-APPS2
-Text Label 950  2650 0    47   ~ 0
-APPS2_RTN
-Text Label 950  1750 0    47   ~ 0
-Brake_24
-Text Label 950  1850 0    47   ~ 0
-Brake_24
-$Comp
-L conn:Conn_01x04 J8
-U 1 1 5C51C8DE
-P 1500 3250
-F 0 "J8" H 1500 3450 50  0000 C CNN
-F 1 "Conn_BoardJ34" H 1500 2950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 1500 3250 50  0001 C CNN
-F 3 "" H 1500 3250 50  0001 C CNN
-	1    1500 3250
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1300 3450
-Text Label 950  3150 0    47   ~ 0
-CAN_H
-Text Label 950  3250 0    47   ~ 0
-CAN_L
-Text Label 950  3350 0    47   ~ 0
-RTN
-$Comp
 L conn:Conn_01x06 J9
 U 1 1 5C51DCA1
-P 1500 3950
-F 0 "J9" H 1500 4250 50  0000 C CNN
-F 1 "Conn_BoardJ35" H 1500 3550 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 1500 3950 50  0001 C CNN
-F 3 "" H 1500 3950 50  0001 C CNN
-	1    1500 3950
+P 1100 3600
+F 0 "J9" H 1100 3900 50  0000 C CNN
+F 1 "Conn_BoardJ35" H 1100 3200 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 1100 3600 50  0001 C CNN
+F 3 "" H 1100 3600 50  0001 C CNN
+	1    1100 3600
 	1    0    0    -1  
 $EndComp
-Text Label 950  3750 0    47   ~ 0
+Text Label 550  3400 0    47   ~ 0
 CAN_H
-Text Label 950  3850 0    47   ~ 0
+Text Label 550  3500 0    47   ~ 0
 CAN_L
-NoConn ~ 1300 3950
-NoConn ~ 1300 4050
-Text Label 950  4150 0    47   ~ 0
+NoConn ~ 900  3600
+NoConn ~ 900  3700
+Text Label 550  3800 0    47   ~ 0
 24v
-Text Label 950  4250 0    47   ~ 0
+Text Label 550  3900 0    47   ~ 0
 RTN
-Text Label 950  4750 0    47   ~ 0
+Text Label 550  4450 0    47   ~ 0
 AIRs+
-Text Label 950  4850 0    47   ~ 0
+Text Label 550  4550 0    47   ~ 0
 AIRs-
 $Comp
 L conn:Conn_01x08 J12
 U 1 1 5C51E906
-P 1500 5650
-F 0 "J12" H 1500 6050 50  0000 C CNN
-F 1 "Conn_BoardJ7" H 1500 5150 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-08A_2x04x4.20mm_Straight" H 1500 5650 50  0001 C CNN
-F 3 "" H 1500 5650 50  0001 C CNN
-	1    1500 5650
+P 1100 5200
+F 0 "J12" H 1100 5600 50  0000 C CNN
+F 1 "Conn_BoardJ7" H 1100 4700 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-08A_2x04x4.20mm_Straight" H 1100 5200 50  0001 C CNN
+F 3 "" H 1100 5200 50  0001 C CNN
+	1    1100 5200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1300 5850
-NoConn ~ 1300 5950
-Text Label 750  5350 0    47   ~ 0
+NoConn ~ 900  5400
+NoConn ~ 900  5500
+Text Label 550  4900 0    47   ~ 0
 RTN
-Text Label 950  5450 0    47   ~ 0
+Text Label 550  5000 0    47   ~ 0
 24v
-Text Label 950  5750 0    47   ~ 0
+Text Label 550  5300 0    47   ~ 0
 IMD_PWM
-Text Label 950  6050 0    47   ~ 0
+Text Label 550  5600 0    47   ~ 0
 IMD_Status
 $Comp
 L conn:Conn_01x02 J13
 U 1 1 5C51F9D0
-P 1500 6350
-F 0 "J13" H 1500 6450 50  0000 C CNN
-F 1 "Conn_BoardJ8" H 1500 6150 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 1500 6350 50  0001 C CNN
-F 3 "" H 1500 6350 50  0001 C CNN
-	1    1500 6350
+P 1100 5950
+F 0 "J13" H 1100 6050 50  0000 C CNN
+F 1 "Conn_BoardJ8" H 1100 5750 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 1100 5950 50  0001 C CNN
+F 3 "" H 1100 5950 50  0001 C CNN
+	1    1100 5950
 	1    0    0    -1  
 $EndComp
-Text Label 950  6350 0    47   ~ 0
+Text Label 550  5950 0    47   ~ 0
 IMD_Status
-Text Label 950  6450 0    47   ~ 0
+Text Label 550  6050 0    47   ~ 0
 RTN
-Text Label 950  6750 0    47   ~ 0
+Text Label 550  6400 0    47   ~ 0
 BP
-Text Label 950  7250 0    47   ~ 0
+Text Label 550  6900 0    47   ~ 0
 RTDS_RTN
-Text Label 950  7150 0    47   ~ 0
+Text Label 550  6800 0    47   ~ 0
 RTDS
-Text Label 950  7050 0    47   ~ 0
+Text Label 550  6700 0    47   ~ 0
 TSAL_1_RTN
-Text Label 950  6950 0    47   ~ 0
+Text Label 550  6600 0    47   ~ 0
 TSAL_1
-Text Label 2150 800  2    47   ~ 0
+Text Label 2000 650  2    47   ~ 0
 IMD_Fault_RTN
-Text Label 2150 1500 2    47   ~ 0
+Text Label 2000 1350 2    47   ~ 0
 TSAL_Cock_RTN
-Text Label 2150 900  2    47   ~ 0
+Text Label 2000 750  2    47   ~ 0
 IMD_Fault_LED
-Text Label 2150 1000 2    47   ~ 0
-Drive_BTN_5v
-Text Label 2150 1100 2    47   ~ 0
+Text Label 2000 850  2    47   ~ 0
+Drive_BTN_RTN
+Text Label 2000 950  2    47   ~ 0
 Drive_BTN
-Text Label 2150 1200 2    47   ~ 0
+Text Label 2000 1050 2    47   ~ 0
 Drive_LED
-Text Label 2150 1300 2    47   ~ 0
+Text Label 2000 1150 2    47   ~ 0
 TSAL_Cock
-Text Label 2150 1400 2    47   ~ 0
+Text Label 2000 1250 2    47   ~ 0
 SPARE_LED
 Text Label 5350 3800 0    47   ~ 0
 PIN64
@@ -562,346 +504,325 @@ PIN63
 $Comp
 L Circuit_layout-rescue:POT RV1
 U 1 1 5C527A38
-P 2800 2550
-F 0 "RV1" V 2625 2550 50  0000 C CNN
-F 1 "APPS2_offset_10k" V 2700 2550 50  0000 C CNN
-F 2 "custom_footprints:3310C-5K-POT" H 2800 2550 50  0001 C CNN
-F 3 "https://www.mouser.com/ProductDetail/ALPS/RK1631110TBK?qs=sGAEpiMZZMtC25l1F4XBUza7emsVrz94FF1ucSDGCSs%3d" H 2800 2550 50  0001 C CNN
-	1    2800 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Circuit_layout-rescue:POT RV2
-U 1 1 5C527B0E
-P 4000 2700
-F 0 "RV2" V 3825 2700 50  0000 C CNN
-F 1 "APPS1_offset_10k" V 3900 2700 50  0000 C CNN
-F 2 "custom_footprints:3310C-5K-POT" H 4000 2700 50  0001 C CNN
-F 3 "" H 4000 2700 50  0001 C CNN
-	1    4000 2700
+P 2200 3250
+F 0 "RV1" V 2025 3250 50  0000 C CNN
+F 1 "APPS2_offset_10k" V 2100 3250 50  0000 C CNN
+F 2 "custom_footprints:3310C-5K-POT" H 2200 3250 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/ALPS/RK1631110TBK?qs=sGAEpiMZZMtC25l1F4XBUza7emsVrz94FF1ucSDGCSs%3d" H 2200 3250 50  0001 C CNN
+F 4 "RK1631110TBK" V 2200 3250 50  0001 C CNN "Mfr#"
+	1    2200 3250
 	0    -1   -1   0   
 $EndComp
 Text Label 5350 2300 0    47   ~ 0
 PIN33
-Text Label 2650 6650 2    47   ~ 0
+Text Label 3500 4200 0    47   ~ 0
 Brake_24
-Text Label 3300 6450 0    47   ~ 0
+Text Label 4400 4400 0    47   ~ 0
 BP
-Text Label 4000 6650 2    47   ~ 0
+Text Label 5150 4400 2    47   ~ 0
 BP_RTN
-Text Label 2850 2900 2    47   ~ 0
+Text Label 2750 3850 2    47   ~ 0
 APPS2_5
-Text Label 2500 2550 2    47   ~ 0
+Text Label 1500 3250 0    47   ~ 0
 APPS2_RTN
-Text Label 3000 1600 2    47   ~ 0
+Text Label 2350 2050 2    47   ~ 0
 APPS2
-Text Label 3600 2500 0    47   ~ 0
+Text Label 3200 3250 0    47   ~ 0
 APPS1_RTN
-Text Label 4150 1600 0    47   ~ 0
+Text Label 4000 2050 0    47   ~ 0
 APPS1
 $Comp
 L switches:SW_SPDT SW2
 U 1 1 5C52E767
-P 2400 5700
-F 0 "SW2" H 2400 5870 50  0000 C CNN
-F 1 "Safty_loop" H 2400 5500 50  0000 C CNN
-F 2 "custom_footprints:Switch_toggle_M2012SS1W03" H 2400 5700 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/nkk-switches/M2012SS1W03/360-1802-ND/1006881" H 2400 5700 50  0001 C CNN
-	1    2400 5700
+P 1750 6800
+F 0 "SW2" H 1750 6970 50  0000 C CNN
+F 1 "Safty_loop" H 1750 6600 50  0000 C CNN
+F 2 "custom_footprints:Switch_toggle_M2012SS1W03" H 1750 6800 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/nkk-switches/M2012SS1W03/360-1802-ND/1006881" H 1750 6800 50  0001 C CNN
+	1    1750 6800
 	1    0    0    -1  
 $EndComp
-Text Label 2050 5700 0    47   ~ 0
+Text Label 1400 6800 0    47   ~ 0
 AIRs+
-Text Label 2750 5600 2    47   ~ 0
+Text Label 2100 6700 2    47   ~ 0
 RTN
-Text Label 4100 5900 2    47   ~ 0
+Text Label 3450 7000 2    47   ~ 0
 24v
-Text Label 2900 7400 2    47   ~ 0
+Text Label 2750 1200 0    47   ~ 0
 TSAL_1
-Text Label 3300 7400 0    47   ~ 0
+Text Label 4100 1200 2    47   ~ 0
 TSAL_1_RTN
-Text Label 3200 1350 2    47   ~ 0
+Text Label 4250 1750 2    47   ~ 0
 Drive_LED
-Text Label 3300 1350 0    47   ~ 0
+Text Label 4350 1750 0    47   ~ 0
 Drive_LED_RTN
-Text Label 2050 6950 2    47   ~ 0
+Text Label 550  7250 0    47   ~ 0
 RTDS
-Text Label 2050 7050 2    47   ~ 0
+Text Label 550  7350 0    47   ~ 0
 RTDS_RTN
 $Comp
 L conn:Conn_01x06 J30
 U 1 1 5C53A4CC
-P 6600 6950
-F 0 "J30" H 6600 7250 50  0000 C CNN
-F 1 "Testing_connector" H 6600 6550 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 6600 6950 50  0001 C CNN
-F 3 "" H 6600 6950 50  0001 C CNN
-	1    6600 6950
+P 6650 6100
+F 0 "J30" H 6650 6400 50  0000 C CNN
+F 1 "Testing_connector" H 6650 5700 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 6650 6100 50  0001 C CNN
+F 3 "" H 6650 6100 50  0001 C CNN
+	1    6650 6100
 	1    0    0    -1  
 $EndComp
-Text Label 6150 6750 2    47   ~ 0
+Text Label 6200 5900 2    47   ~ 0
 SDA
-Text Label 6150 6850 2    47   ~ 0
+Text Label 6200 6000 2    47   ~ 0
 SCL
 $Comp
 L Circuit_layout-rescue:POT_Dual RV3
 U 1 1 5C59C5F8
-P 3600 2200
-F 0 "RV3" H 3600 2350 50  0000 C CNN
-F 1 "APPS_5k" H 3600 2275 50  0000 C CNN
-F 2 "custom_footprints:PDB182-k" H 3850 2125 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/bourns-inc/PDB182-K220K-502B/PDB182-K220K-502B-ND/2564760" H 3850 2125 50  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/bourns-inc/PDB182-K220K-502B/PDB182-K220K-502B-ND/2564760" H 3600 2200 60  0001 C CNN "Field4"
-	1    3600 2200
+P 3200 2900
+F 0 "RV3" H 3200 3050 50  0000 C CNN
+F 1 "APPS_5k" H 3200 2975 50  0000 C CNN
+F 2 "custom_footprints:PDB182-k" H 3450 2825 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/bourns-inc/PDB182-K220K-502B/PDB182-K220K-502B-ND/2564760" H 3450 2825 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/bourns-inc/PDB182-K220K-502B/PDB182-K220K-502B-ND/2564760" H 3200 2900 60  0001 C CNN "Field4"
+	1    3200 2900
 	1    0    0    -1  
 $EndComp
-Text Label 2050 6050 0    47   ~ 0
+Text Label 1750 5850 0    47   ~ 0
 AIRs-
-Text Label 2300 6050 0    47   ~ 0
+Text Label 2000 5850 0    47   ~ 0
 RTN
 $Comp
 L conn:Conn_01x06 J14
 U 1 1 5C5A5844
-P 1500 6950
-F 0 "J14" H 1500 7250 50  0000 C CNN
-F 1 "Conn_BoardJ21" H 1500 6550 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 1500 6950 50  0001 C CNN
-F 3 "" H 1500 6950 50  0001 C CNN
-	1    1500 6950
+P 1100 6600
+F 0 "J14" H 1100 6900 50  0000 C CNN
+F 1 "Conn_BoardJ21" H 1100 6200 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 1100 6600 50  0001 C CNN
+F 3 "" H 1100 6600 50  0001 C CNN
+	1    1100 6600
 	1    0    0    -1  
 $EndComp
-Text Label 950  6850 0    47   ~ 0
+Text Label 550  6500 0    47   ~ 0
 BP_RTN
-$Comp
-L conn:Conn_01x10 J7
-U 1 1 5C5A9FF7
-P 1500 2150
-F 0 "J7" H 1500 2650 50  0000 C CNN
-F 1 "Conn_BoardJ3" H 1500 1550 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-10A_2x05x4.20mm_Straight" H 1500 2150 50  0001 C CNN
-F 3 "" H 1500 2150 50  0001 C CNN
-	1    1500 2150
-	1    0    0    -1  
-$EndComp
-Text Label 3350 750  2    47   ~ 0
-Drive_BTN_5v
-Text Label 4100 750  0    47   ~ 0
+Text Label 3050 800  2    47   ~ 0
+Drive_BTN_RTN
+Text Label 3800 800  0    47   ~ 0
 Drive_BTN
-Text Label 4900 1300 0    47   ~ 0
+Text Label 5350 1150 0    47   ~ 0
 IMD_Fault_RTN
-Text Label 4800 1300 2    47   ~ 0
+Text Label 5250 1150 2    47   ~ 0
 IMD_Fault_LED
 $Comp
 L conn:Screw_Terminal_01x02 J11
 U 1 1 5C6341A3
-P 2350 6950
-F 0 "J11" H 2350 7050 50  0000 C CNN
-F 1 "RTDS" H 2350 6750 50  0000 C CNN
-F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 2350 6950 50  0001 C CNN
-F 3 "" H 2350 6950 50  0001 C CNN
-	1    2350 6950
+P 1100 7250
+F 0 "J11" H 1100 7350 50  0000 C CNN
+F 1 "RTDS" H 1100 7050 50  0000 C CNN
+F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 1100 7250 50  0001 C CNN
+F 3 "" H 1100 7250 50  0001 C CNN
+	1    1100 7250
 	1    0    0    -1  
 $EndComp
-Text Label 6150 6950 2    47   ~ 0
+Text Label 6200 6100 2    47   ~ 0
 PC_ready
-Text Label 6150 7050 2    47   ~ 0
+Text Label 6200 6200 2    47   ~ 0
 Safety_Loop
-Text Label 6150 7150 2    47   ~ 0
+Text Label 6200 6300 2    47   ~ 0
 IMD_Status
-Text Label 6150 7250 2    47   ~ 0
+Text Label 6200 6400 2    47   ~ 0
 Throttle_LV
 $Comp
 L Circuit_layout-rescue:MCP2551-I_SN U3
 U 1 1 5C638029
-P 4400 5050
-F 0 "U3" H 4000 5400 50  0000 L CNN
-F 1 "MCP2551-I/SN" H 4500 5400 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4400 4550 50  0001 C CIN
-F 3 "" H 4400 5050 50  0001 C CNN
-	1    4400 5050
+P 4800 6500
+F 0 "U3" H 4400 6850 50  0000 L CNN
+F 1 "MCP2551-I/SN" H 4900 6850 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4800 6000 50  0001 C CIN
+F 3 "" H 4800 6500 50  0001 C CNN
+	1    4800 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L LT1763CS8-3.3PBF:LT1763CS8-3.3PBF U2
 U 1 1 5C63B1BC
-P 2950 4050
-F 0 "U2" H 2764 4710 50  0000 L BNN
-F 1 "LT1763CS8-3.3PBF" H 2727 4609 50  0000 L BNN
-F 2 "LT1763CS8-3.3PBF:SOIC127P600X175-8N" H 2950 4050 50  0001 L BNN
-F 3 "Voltage stabiliser; LDO, fixed; 3.3V; 500mA; SO8; SMD" H 2950 4050 50  0001 L BNN
-F 4 "Linear Technology/Analog" H 2950 4050 50  0001 L BNN "Field4"
-F 5 "SOIC-8 Linear Technology" H 2950 4050 50  0001 L BNN "Field5"
-F 6 "LT1763CS8-3.3#PBF" H 2950 4050 50  0001 L BNN "Field6"
-F 7 "None" H 2950 4050 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 2950 4050 50  0001 L BNN "Field8"
-	1    2950 4050
+P 2650 4850
+F 0 "U2" H 2464 5510 50  0000 L BNN
+F 1 "LT1763CS8-3.3PBF" H 2427 5409 50  0000 L BNN
+F 2 "LT1763CS8-3.3PBF:SOIC127P600X175-8N" H 2650 4850 50  0001 L BNN
+F 3 "Voltage stabiliser; LDO, fixed; 3.3V; 500mA; SO8; SMD" H 2650 4850 50  0001 L BNN
+F 4 "Linear Technology/Analog" H 2650 4850 50  0001 L BNN "Field4"
+F 5 "SOIC-8 Linear Technology" H 2650 4850 50  0001 L BNN "Field5"
+F 6 "LT1763CS8-3.3#PBF" H 2650 4850 50  0001 L BNN "Field6"
+F 7 "None" H 2650 4850 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 2650 4850 50  0001 L BNN "Field8"
+	1    2650 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L conn:Conn_01x01 J24
 U 1 1 5C63CCB6
-P 6600 1000
-F 0 "J24" H 6600 1100 50  0000 C CNN
-F 1 "24v_Banana" H 6600 900 50  0000 C CNN
-F 2 "More_Connector:Banana_Jack_1Pin" H 6600 1000 50  0001 C CNN
-F 3 "" H 6600 1000 50  0001 C CNN
-	1    6600 1000
+P 7200 1000
+F 0 "J24" H 7200 1100 50  0000 C CNN
+F 1 "24v_Banana" H 7200 900 50  0000 C CNN
+F 2 "More_Connector:Banana_Jack_1Pin" H 7200 1000 50  0001 C CNN
+F 3 "" H 7200 1000 50  0001 C CNN
+	1    7200 1000
 	0    1    1    0   
 $EndComp
 $Comp
 L conn:Conn_01x01 J26
 U 1 1 5C63D8E4
-P 7000 1000
-F 0 "J26" H 7000 1100 50  0000 C CNN
-F 1 "5v_Banana" H 7000 900 50  0000 C CNN
-F 2 "More_Connector:Banana_Jack_1Pin" H 7000 1000 50  0001 C CNN
-F 3 "" H 7000 1000 50  0001 C CNN
-	1    7000 1000
+P 7600 1000
+F 0 "J26" H 7600 1100 50  0000 C CNN
+F 1 "5v_Banana" H 7600 900 50  0000 C CNN
+F 2 "More_Connector:Banana_Jack_1Pin" H 7600 1000 50  0001 C CNN
+F 3 "" H 7600 1000 50  0001 C CNN
+	1    7600 1000
 	0    1    1    0   
 $EndComp
 $Comp
 L conn:Conn_01x01 J27
 U 1 1 5C63D987
-P 7400 1000
-F 0 "J27" H 7400 1100 50  0000 C CNN
-F 1 "RTN_Banana" H 7400 900 50  0000 C CNN
-F 2 "More_Connector:Banana_Jack_1Pin" H 7400 1000 50  0001 C CNN
-F 3 "" H 7400 1000 50  0001 C CNN
-	1    7400 1000
+P 8000 1000
+F 0 "J27" H 8000 1100 50  0000 C CNN
+F 1 "RTN_Banana" H 8000 900 50  0000 C CNN
+F 2 "More_Connector:Banana_Jack_1Pin" H 8000 1000 50  0001 C CNN
+F 3 "" H 8000 1000 50  0001 C CNN
+	1    8000 1000
 	0    1    1    0   
 $EndComp
-Text Label 6600 650  0    47   ~ 0
+Text Label 7200 650  0    47   ~ 0
 24v
-Text Label 7000 650  0    47   ~ 0
+Text Label 7600 650  0    47   ~ 0
 5v
-Text Label 7400 650  0    47   ~ 0
+Text Label 8000 650  0    47   ~ 0
 RTN
 $Comp
 L TSI_HV_Isolater-cache:C C7
 U 1 1 5C6415BA
-P 1950 4500
-F 0 "C7" H 1975 4600 50  0000 L CNN
-F 1 "1uF" H 1975 4400 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1988 4350 50  0001 C CNN
-F 3 "" H 1950 4500 50  0000 C CNN
-	1    1950 4500
+P 1650 5000
+F 0 "C7" H 1675 5100 50  0000 L CNN
+F 1 "1uF" H 1675 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1688 4850 50  0001 C CNN
+F 3 "" H 1650 5000 50  0000 C CNN
+	1    1650 5000
 	1    0    0    -1  
 $EndComp
-Text Label 2250 4850 0    47   ~ 0
+Text Label 1950 5500 0    47   ~ 0
 RTN
-Text Label 1950 3750 0    47   ~ 0
+Text Label 1650 4550 0    47   ~ 0
 5v
-Text Label 3750 4350 2    47   ~ 0
+Text Label 3450 5150 2    47   ~ 0
 3.3v
 $Comp
 L conn:Conn_01x01 J28
 U 1 1 5C643E08
-P 7850 1000
-F 0 "J28" H 7850 1100 50  0000 C CNN
-F 1 "3.3v_Banana" H 7850 900 50  0000 C CNN
-F 2 "More_Connector:Banana_Jack_1Pin" H 7850 1000 50  0001 C CNN
-F 3 "" H 7850 1000 50  0001 C CNN
-	1    7850 1000
+P 8450 1000
+F 0 "J28" H 8450 1100 50  0000 C CNN
+F 1 "3.3v_Banana" H 8450 900 50  0000 C CNN
+F 2 "More_Connector:Banana_Jack_1Pin" H 8450 1000 50  0001 C CNN
+F 3 "" H 8450 1000 50  0001 C CNN
+	1    8450 1000
 	0    1    1    0   
 $EndComp
-Text Label 7850 650  0    47   ~ 0
+Text Label 8450 650  0    47   ~ 0
 3.3v
 $Comp
-L Device:Jumper JP1
+L Circuit_layout-rescue:Jumper-Device JP1
 U 1 1 5C644600
-P 3750 4050
-F 0 "JP1" H 3750 4200 50  0000 C CNN
-F 1 "Jumper" H 3750 3970 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3750 4050 50  0001 C CNN
-F 3 "" H 3750 4050 50  0001 C CNN
-	1    3750 4050
+P 3450 4850
+F 0 "JP1" H 3450 5000 50  0000 C CNN
+F 1 "Jumper" H 3450 4770 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3450 4850 50  0001 C CNN
+F 3 "" H 3450 4850 50  0001 C CNN
+	1    3450 4850
 	0    1    1    0   
 $EndComp
-Text Label 4400 4450 0    47   ~ 0
+Text Label 4800 5900 0    47   ~ 0
 5v
-Text Label 4400 5650 0    47   ~ 0
+Text Label 4800 7100 0    47   ~ 0
 RTN
 $Comp
-L Device:Jumper JP2
+L Circuit_layout-rescue:Jumper-Device JP2
 U 1 1 5C646944
-P 5100 5100
-F 0 "JP2" H 5100 5250 50  0000 C CNN
-F 1 "Jumper" H 5100 5020 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5100 5100 50  0001 C CNN
-F 3 "" H 5100 5100 50  0001 C CNN
-	1    5100 5100
+P 5500 6550
+F 0 "JP2" H 5500 6700 50  0000 C CNN
+F 1 "Jumper" H 5500 6470 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5500 6550 50  0001 C CNN
+F 3 "" H 5500 6550 50  0001 C CNN
+	1    5500 6550
 	0    1    1    0   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R2
 U 1 1 5C646B6A
-P 5100 5600
-F 0 "R2" V 5180 5600 50  0000 C CNN
-F 1 "120" V 5100 5600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5030 5600 50  0001 C CNN
-F 3 "" H 5100 5600 50  0000 C CNN
-	1    5100 5600
+P 5500 7050
+F 0 "R2" V 5580 7050 50  0000 C CNN
+F 1 "120" V 5500 7050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5430 7050 50  0001 C CNN
+F 3 "" H 5500 7050 50  0000 C CNN
+	1    5500 7050
 	1    0    0    -1  
 $EndComp
-Text Label 5150 4800 1    47   ~ 0
+Text Label 5550 6250 1    47   ~ 0
 CAN_H_TEST
-Text Label 5150 5850 3    47   ~ 0
+Text Label 5550 7300 3    47   ~ 0
 CAN_L_TEST
-NoConn ~ 3750 5150
+NoConn ~ 4150 6600
 $Comp
 L TSI_HV_Isolater-cache:R R1
 U 1 1 5C648434
-P 3600 5250
-F 0 "R1" V 3680 5250 50  0000 C CNN
-F 1 "1k" V 3600 5250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3530 5250 50  0001 C CNN
-F 3 "" H 3600 5250 50  0000 C CNN
-	1    3600 5250
+P 4000 6700
+F 0 "R1" V 4080 6700 50  0000 C CNN
+F 1 "1k" V 4000 6700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3930 6700 50  0001 C CNN
+F 3 "" H 4000 6700 50  0000 C CNN
+	1    4000 6700
 	0    1    1    0   
 $EndComp
-Text Label 3300 5250 0    47   ~ 0
+Text Label 3700 6700 0    47   ~ 0
 RTN
-Text Label 3750 4850 2    47   ~ 0
+Text Label 4150 6300 2    47   ~ 0
 CAN_TX_TEST
-Text Label 3750 4950 2    47   ~ 0
+Text Label 4150 6400 2    47   ~ 0
 CAN_RX_TEST
-Text Label 5150 6600 2    47   ~ 0
+Text Label 6200 6700 2    47   ~ 0
 SDA
-Text Label 5150 6700 2    47   ~ 0
+Text Label 6200 6800 2    47   ~ 0
 SCL
-Text Label 5150 6800 2    47   ~ 0
+Text Label 6200 6900 2    47   ~ 0
 PC_ready
-Text Label 5150 6900 2    47   ~ 0
+Text Label 6200 7000 2    47   ~ 0
 Safety_Loop
-Text Label 5150 7000 2    47   ~ 0
+Text Label 6200 7100 2    47   ~ 0
 IMD_Status
-Text Label 5150 7100 2    47   ~ 0
+Text Label 6200 7200 2    47   ~ 0
 Throttle_LV
 $Comp
 L conn:Conn_01x10 J15
 U 1 1 5C6508AA
-P 2600 1200
-F 0 "J15" H 2600 1700 50  0000 C CNN
-F 1 "Conn_BoardJ24" H 2600 600 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-10A_2x05x4.20mm_Straight" H 2600 1200 50  0001 C CNN
-F 3 "" H 2600 1200 50  0001 C CNN
-	1    2600 1200
+P 2450 1050
+F 0 "J15" H 2450 1550 50  0000 C CNN
+F 1 "Conn_BoardJ24" H 2450 450 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-10A_2x05x4.20mm_Straight" H 2450 1050 50  0001 C CNN
+F 3 "" H 2450 1050 50  0001 C CNN
+	1    2450 1050
 	1    0    0    -1  
 $EndComp
-Text Label 2150 1600 2    47   ~ 0
+Text Label 2000 1450 2    47   ~ 0
 Drive_LED_RTN
-Text Label 2150 1700 2    47   ~ 0
+Text Label 2000 1550 2    47   ~ 0
 SPARE_LED_RTN
-Text Label 4050 1500 0    47   ~ 0
+Text Label 5400 1750 0    47   ~ 0
 SPARE_LED_RTN
-Text Label 3950 1500 2    47   ~ 0
+Text Label 5300 1750 2    47   ~ 0
 SPARE_LED
-Text Label 5600 1450 2    47   ~ 0
+Text Label 6250 1200 2    47   ~ 0
 TSAL_Cock
-Text Label 5700 1450 0    47   ~ 0
+Text Label 6350 1200 0    47   ~ 0
 TSAL_Cock_RTN
 $Comp
-L Device:LED_ALT D6
+L Circuit_layout-rescue:LED_ALT-Device D6
 U 1 1 5C655D68
 P 8550 6300
 F 0 "D6" H 8550 6400 50  0000 C CNN
@@ -912,7 +833,7 @@ F 3 "" H 8550 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_ALT D5
+L Circuit_layout-rescue:LED_ALT-Device D5
 U 1 1 5C655F35
 P 8550 6050
 F 0 "D5" H 8550 6150 50  0000 C CNN
@@ -923,7 +844,7 @@ F 3 "" H 8550 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_ALT D4
+L Circuit_layout-rescue:LED_ALT-Device D4
 U 1 1 5C655FCE
 P 8550 5800
 F 0 "D4" H 8550 5900 50  0000 C CNN
@@ -945,7 +866,7 @@ F 3 "" H 9700 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_ALT D1
+L Circuit_layout-rescue:LED_ALT-Device D1
 U 1 1 5C658B71
 P 7750 5800
 F 0 "D1" H 7750 5900 50  0000 C CNN
@@ -956,7 +877,7 @@ F 3 "" H 7750 5800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED_ALT D2
+L Circuit_layout-rescue:LED_ALT-Device D2
 U 1 1 5C658B77
 P 7750 6050
 F 0 "D2" H 7750 6150 50  0000 C CNN
@@ -967,7 +888,7 @@ F 3 "" H 7750 6050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED_ALT D3
+L Circuit_layout-rescue:LED_ALT-Device D3
 U 1 1 5C658B7D
 P 7750 6300
 F 0 "D3" H 7750 6400 50  0000 C CNN
@@ -998,56 +919,52 @@ LED_1
 $Comp
 L conn:Conn_01x04 J25
 U 1 1 5C66200B
-P 6650 6050
-F 0 "J25" H 6650 6250 50  0000 C CNN
-F 1 "Testing_CAN_Connector" H 6650 5750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6650 6050 50  0001 C CNN
-F 3 "" H 6650 6050 50  0001 C CNN
-	1    6650 6050
+P 10950 6100
+F 0 "J25" H 10950 6300 50  0000 C CNN
+F 1 "Testing_CAN_Connector" H 10750 5800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 10950 6100 50  0001 C CNN
+F 3 "" H 10950 6100 50  0001 C CNN
+	1    10950 6100
 	1    0    0    -1  
 $EndComp
-Text Label 6300 5950 2    47   ~ 0
+Text Label 10600 6000 2    47   ~ 0
 CAN_TX_TEST
-Text Label 6300 6050 2    47   ~ 0
+Text Label 10600 6100 2    47   ~ 0
 CAN_RX_TEST
-Text Label 6300 6250 2    47   ~ 0
+Text Label 10600 6300 2    47   ~ 0
 CAN_L_TEST
-Text Label 6300 6150 2    47   ~ 0
+Text Label 10600 6200 2    47   ~ 0
 CAN_H_TEST
-Text Label 5150 7200 2    47   ~ 0
+Text Label 6200 7300 2    47   ~ 0
 CAN_H
-Text Label 5150 7300 2    47   ~ 0
+Text Label 6200 7400 2    47   ~ 0
 CAN_L
 $Comp
 L conn:Conn_01x10 J23
 U 1 1 5C633B82
-P 5600 7000
-F 0 "J23" H 5600 7500 50  0000 C CNN
-F 1 "Testing_pins" H 5600 6400 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 5600 7000 50  0001 C CNN
-F 3 "" H 5600 7000 50  0001 C CNN
-	1    5600 7000
+P 6650 7100
+F 0 "J23" H 6650 7600 50  0000 C CNN
+F 1 "Testing_pins" H 6650 6500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 6650 7100 50  0001 C CNN
+F 3 "" H 6650 7100 50  0001 C CNN
+	1    6650 7100
 	1    0    0    -1  
 $EndComp
-Text Label 5150 7400 2    47   ~ 0
+Text Label 6200 7500 2    47   ~ 0
 APPS1
-Text Label 5150 7500 2    47   ~ 0
+Text Label 6200 7600 2    47   ~ 0
 APPS2
-Text Notes 3450 1950 0    47   ~ 0
-688-RK1631210AX9 
-Text Notes 2400 2400 0    47   ~ 0
-688-RK1631110TBK 
-Text Notes 4800 650  0    47   ~ 0
+Text Notes 2700 600  0    47   ~ 0
 PV0H240SS-231 
 $Comp
 L conn:Conn_01x04 J10
 U 1 1 5C673489
-P 1500 4650
-F 0 "J10" H 1500 4850 50  0000 C CNN
-F 1 "Conn_BoardJ6" H 1500 4350 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 1500 4650 50  0001 C CNN
-F 3 "" H 1500 4650 50  0001 C CNN
-	1    1500 4650
+P 1100 4350
+F 0 "J10" H 1100 4550 50  0000 C CNN
+F 1 "Conn_BoardJ6" H 1100 4050 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 1100 4350 50  0001 C CNN
+F 3 "" H 1100 4350 50  0001 C CNN
+	1    1100 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1120,13 +1037,13 @@ Wire Wire Line
 	9900 5300 9900 5450
 Connection ~ 9900 5450
 Wire Wire Line
-	8950 1050 9000 1050
+	9000 700  9050 700 
 Wire Wire Line
-	8950 1250 9050 1250
+	9000 900  9100 900 
 Wire Wire Line
-	8950 1350 9050 1350
+	9000 1000 9100 1000
 Wire Wire Line
-	8950 1450 9050 1450
+	9000 1100 9100 1100
 Wire Wire Line
 	5650 2400 5400 2400
 Wire Wire Line
@@ -1348,253 +1265,178 @@ Wire Wire Line
 Wire Wire Line
 	5650 3800 5350 3800
 Wire Wire Line
-	1300 950  950  950 
+	900  3400 550  3400
 Wire Wire Line
-	1300 1050 950  1050
+	900  3500 550  3500
 Wire Wire Line
-	1300 1350 950  1350
+	900  3800 550  3800
 Wire Wire Line
-	1300 1450 950  1450
+	900  3900 550  3900
 Wire Wire Line
-	1300 1950 950  1950
+	900  4450 550  4450
 Wire Wire Line
-	1300 2150 950  2150
+	900  4550 550  4550
 Wire Wire Line
-	1300 2250 950  2250
+	900  5000 550  5000
 Wire Wire Line
-	1300 2350 950  2350
+	900  5100 800  5100
 Wire Wire Line
-	1300 2450 950  2450
+	900  5300 550  5300
 Wire Wire Line
-	1300 2550 950  2550
+	900  5600 550  5600
 Wire Wire Line
-	1300 2650 950  2650
+	900  5950 550  5950
 Wire Wire Line
-	1300 1750 950  1750
+	900  6050 550  6050
 Wire Wire Line
-	1300 1850 950  1850
+	900  6400 550  6400
 Wire Wire Line
-	1300 3150 950  3150
+	900  6900 550  6900
 Wire Wire Line
-	1300 3250 950  3250
+	900  6800 550  6800
 Wire Wire Line
-	1300 3350 950  3350
+	900  6700 550  6700
 Wire Wire Line
-	1300 3750 950  3750
+	900  6600 550  6600
 Wire Wire Line
-	1300 3850 950  3850
+	2250 650  2000 650 
 Wire Wire Line
-	1300 4150 950  4150
+	2250 1350 2000 1350
 Wire Wire Line
-	1300 4250 950  4250
+	2250 750  2000 750 
 Wire Wire Line
-	1300 4750 950  4750
+	2250 850  2000 850 
 Wire Wire Line
-	1300 4850 950  4850
+	2250 950  2000 950 
 Wire Wire Line
-	750  5350 1300 5350
+	2250 1050 2000 1050
 Wire Wire Line
-	1300 5450 950  5450
+	2250 1150 2000 1150
 Wire Wire Line
-	1300 5550 750  5550
+	2250 1250 2000 1250
 Wire Wire Line
-	750  5350 750  5550
+	1950 6700 2100 6700
 Wire Wire Line
-	750  5650 1300 5650
-Connection ~ 750  5550
+	1950 6900 2350 6900
 Wire Wire Line
-	1300 5750 950  5750
+	2450 6900 2900 6900
 Wire Wire Line
-	1300 6050 950  6050
+	4250 1600 4250 1750
 Wire Wire Line
-	1300 6350 950  6350
+	4350 1600 4350 1750
 Wire Wire Line
-	1300 6450 950  6450
+	6450 5900 6200 5900
 Wire Wire Line
-	1300 6750 950  6750
+	6450 6000 6200 6000
 Wire Wire Line
-	1300 7250 950  7250
+	6450 6100 6200 6100
 Wire Wire Line
-	1300 7150 950  7150
+	6450 6200 6200 6200
 Wire Wire Line
-	1300 7050 950  7050
+	6450 6300 6200 6300
 Wire Wire Line
-	1300 6950 950  6950
+	6450 6400 6200 6400
 Wire Wire Line
-	2400 800  2150 800 
+	3450 2800 3450 2600
 Wire Wire Line
-	2400 1500 2150 1500
+	1750 5850 2000 5850
 Wire Wire Line
-	2400 900  2150 900 
+	900  6500 550  6500
 Wire Wire Line
-	2400 1000 2150 1000
+	3200 800  3050 800 
 Wire Wire Line
-	2400 1100 2150 1100
+	3600 800  3800 800 
 Wire Wire Line
-	2400 1200 2150 1200
+	5250 1000 5250 1150
 Wire Wire Line
-	2400 1300 2150 1300
+	5350 1000 5350 1150
 Wire Wire Line
-	2400 1400 2150 1400
+	6250 950  6250 1200
 Wire Wire Line
-	2650 6650 2800 6650
+	6350 950  6350 1200
 Wire Wire Line
-	3200 6650 3300 6650
+	7200 800  7200 650 
 Wire Wire Line
-	2650 2550 2500 2550
+	7600 800  7600 650 
 Wire Wire Line
-	4000 2300 4900 2300
+	8000 800  8000 650 
 Wire Wire Line
-	2600 5600 2750 5600
+	1650 4550 1900 4550
 Wire Wire Line
-	2600 5800 3000 5800
+	1950 4750 1800 4750
 Wire Wire Line
-	3100 5800 3550 5800
+	1850 4850 1950 4850
 Wire Wire Line
-	3050 7400 2900 7400
+	1950 4950 1900 4950
 Wire Wire Line
-	3150 7400 3300 7400
+	1900 4950 1900 4550
+Connection ~ 1900 4550
 Wire Wire Line
-	3200 1200 3200 1350
+	1950 5150 1950 5250
+Connection ~ 1950 5250
 Wire Wire Line
-	3300 1200 3300 1350
+	1800 4750 1800 4100
 Wire Wire Line
-	3950 1200 3950 1500
+	1800 4100 3350 4100
+Connection ~ 1800 4750
 Wire Wire Line
-	4050 1200 4050 1500
+	3350 4550 3450 4550
 Wire Wire Line
-	2150 6950 2050 6950
+	8450 800  8450 650 
 Wire Wire Line
-	6400 6750 6150 6750
+	4800 6100 4800 5900
 Wire Wire Line
-	6400 6850 6150 6850
+	4800 6900 4800 7100
 Wire Wire Line
-	6400 6950 6150 6950
+	5300 6400 5400 6400
 Wire Wire Line
-	6400 7050 6150 7050
+	5300 6600 5400 6600
 Wire Wire Line
-	6400 7150 6150 7150
+	4150 6300 4300 6300
 Wire Wire Line
-	6400 7250 6150 7250
+	4300 6400 4150 6400
 Wire Wire Line
-	3500 2300 3500 3150
+	4300 6600 4150 6600
 Wire Wire Line
-	3850 2100 3850 1800
+	4300 6700 4150 6700
 Wire Wire Line
-	3300 6650 3300 6450
-Connection ~ 3300 6650
+	5400 6400 5400 6250
 Wire Wire Line
-	2050 6050 2300 6050
+	5400 6250 5500 6250
 Wire Wire Line
-	1300 6850 950  6850
+	5400 6600 5400 7300
 Wire Wire Line
-	3500 750  3350 750 
+	5500 7300 5500 7200
 Wire Wire Line
-	3900 750  4100 750 
+	5500 6900 5500 6850
+Connection ~ 5500 6250
+Connection ~ 5500 7300
 Wire Wire Line
-	4800 1150 4800 1300
+	5400 7300 5500 7300
 Wire Wire Line
-	4900 1150 4900 1300
+	3850 6700 3700 6700
 Wire Wire Line
-	5600 1200 5600 1450
+	6450 6700 6200 6700
 Wire Wire Line
-	5700 1200 5700 1450
+	6450 6800 6200 6800
 Wire Wire Line
-	2050 7050 2150 7050
+	6450 6900 6200 6900
 Wire Wire Line
-	6600 800  6600 650 
+	6450 7000 6200 7000
 Wire Wire Line
-	7000 800  7000 650 
+	6450 7100 6200 7100
 Wire Wire Line
-	7400 800  7400 650 
+	6450 7200 6200 7200
 Wire Wire Line
-	1950 3750 2200 3750
+	6450 7300 6200 7300
 Wire Wire Line
-	2250 3950 2100 3950
+	6450 7400 6200 7400
 Wire Wire Line
-	1950 3950 1950 4350
+	4850 4400 5150 4400
 Wire Wire Line
-	1950 4650 1950 4850
+	2250 1450 2000 1450
 Wire Wire Line
-	1950 4850 2150 4850
-Wire Wire Line
-	2150 4850 2150 4050
-Wire Wire Line
-	2150 4050 2250 4050
-Wire Wire Line
-	2250 4150 2200 4150
-Wire Wire Line
-	2200 4150 2200 3750
-Connection ~ 2200 3750
-Wire Wire Line
-	2250 4350 2250 4450
-Connection ~ 2250 4450
-Connection ~ 2250 4550
-Wire Wire Line
-	2100 3950 2100 3200
-Wire Wire Line
-	2100 3200 3650 3200
-Wire Wire Line
-	3650 3200 3650 3750
-Connection ~ 2100 3950
-Wire Wire Line
-	3650 3750 3750 3750
-Wire Wire Line
-	7850 800  7850 650 
-Wire Wire Line
-	4400 4650 4400 4450
-Wire Wire Line
-	4400 5450 4400 5650
-Wire Wire Line
-	4900 4950 5000 4950
-Wire Wire Line
-	4900 5150 5000 5150
-Wire Wire Line
-	3750 4850 3900 4850
-Wire Wire Line
-	3900 4950 3750 4950
-Wire Wire Line
-	3900 5150 3750 5150
-Wire Wire Line
-	3900 5250 3750 5250
-Wire Wire Line
-	5000 4950 5000 4800
-Wire Wire Line
-	5000 4800 5100 4800
-Wire Wire Line
-	5000 5150 5000 5850
-Wire Wire Line
-	5100 5850 5100 5750
-Wire Wire Line
-	5100 5450 5100 5400
-Connection ~ 5100 4800
-Connection ~ 5100 5850
-Wire Wire Line
-	5000 5850 5100 5850
-Wire Wire Line
-	3450 5250 3300 5250
-Wire Wire Line
-	5400 6600 5150 6600
-Wire Wire Line
-	5400 6700 5150 6700
-Wire Wire Line
-	5400 6800 5150 6800
-Wire Wire Line
-	5400 6900 5150 6900
-Wire Wire Line
-	5400 7000 5150 7000
-Wire Wire Line
-	5400 7100 5150 7100
-Wire Wire Line
-	5400 7200 5150 7200
-Wire Wire Line
-	5400 7300 5150 7300
-Wire Wire Line
-	3700 6650 4000 6650
-Wire Wire Line
-	2400 1600 2150 1600
-Wire Wire Line
-	2400 1700 2150 1700
+	2250 1550 2000 1550
 Wire Wire Line
 	7900 5800 8050 5800
 Wire Wire Line
@@ -1609,51 +1451,51 @@ Wire Wire Line
 Wire Wire Line
 	7600 6300 7450 6300
 Wire Wire Line
-	6450 5950 6300 5950
+	10750 6000 10600 6000
 Wire Wire Line
-	6450 6050 6300 6050
+	10750 6100 10600 6100
 Wire Wire Line
-	6450 6150 6300 6150
+	10750 6200 10600 6200
 Wire Wire Line
-	6450 6250 6300 6250
+	10750 6300 10600 6300
 Wire Wire Line
-	5400 7500 5150 7500
+	6450 7600 6200 7600
 Wire Wire Line
-	5400 7400 5150 7400
+	6450 7500 6200 7500
 Wire Wire Line
-	1300 4550 950  4550
+	900  4250 550  4250
 Wire Wire Line
-	1300 4650 950  4650
-Text Label 950  4550 0    47   ~ 0
+	900  4350 550  4350
+Text Label 550  4250 0    47   ~ 0
 SL1
-Text Label 950  4650 0    47   ~ 0
+Text Label 550  4350 0    47   ~ 0
 SL1_RTN
-Text Label 3500 5800 0    47   ~ 0
+Text Label 2850 6900 0    47   ~ 0
 SL1
 $Comp
 L switches:SW_SPDT SW4
 U 1 1 5C677417
-P 3750 5800
-F 0 "SW4" H 3750 5970 50  0000 C CNN
-F 1 "Safty_loop_1" H 3500 5700 50  0000 C CNN
-F 2 "custom_footprints:Switch_toggle_M2012SS1W03" H 3750 5800 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/nkk-switches/M2012SS1W03/360-1802-ND/1006881" H 3750 5800 50  0001 C CNN
-	1    3750 5800
+P 3100 6900
+F 0 "SW4" H 3100 7070 50  0000 C CNN
+F 1 "Safty_loop_1" H 2850 6800 50  0000 C CNN
+F 2 "custom_footprints:Switch_toggle_M2012SS1W03" H 3100 6900 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/nkk-switches/M2012SS1W03/360-1802-ND/1006881" H 3100 6900 50  0001 C CNN
+	1    3100 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 5700 4100 5700
+	3300 6800 3450 6800
 Wire Wire Line
-	3950 5900 4100 5900
+	3300 7000 3450 7000
 Wire Wire Line
-	2200 5700 2050 5700
-Text Label 4100 5700 2    47   ~ 0
+	1550 6800 1400 6800
+Text Label 3450 6800 2    47   ~ 0
 RTN
-Text Label 3750 6050 0    47   ~ 0
+Text Label 3000 5850 0    47   ~ 0
 RTN
 Wire Wire Line
-	3500 6050 3750 6050
-Text Label 3500 6050 2    47   ~ 0
+	2750 5850 3000 5850
+Text Label 2750 5850 2    47   ~ 0
 SL1_RTN
 Wire Wire Line
 	7150 5800 7100 5800
@@ -1757,395 +1599,287 @@ Connection ~ 8200 6050
 Wire Wire Line
 	8200 6300 8400 6300
 $Comp
-L Device:LED_ALT D7
+L Circuit_layout-rescue:LED_ALT-Device D7
 U 1 1 5C6CC287
-P 2950 7100
-F 0 "D7" H 2950 7200 50  0000 C CNN
-F 1 "TSAL" H 2950 7000 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 2950 7100 50  0001 C CNN
-F 3 "" H 2950 7100 50  0001 C CNN
-	1    2950 7100
-	1    0    0    -1  
+P 3550 1200
+F 0 "D7" H 3550 1300 50  0000 C CNN
+F 1 "TSAL" H 3550 1100 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 3550 1200 50  0001 C CNN
+F 3 "" H 3550 1200 50  0001 C CNN
+	1    3550 1200
+	-1   0    0    1   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R9
 U 1 1 5C6CD4DD
-P 3300 7100
-F 0 "R9" V 3380 7100 50  0000 C CNN
-F 1 "1.5k" V 3300 7100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 7100 50  0001 C CNN
-F 3 "" H 3300 7100 50  0000 C CNN
-	1    3300 7100
+P 3200 1200
+F 0 "R9" V 3280 1200 50  0000 C CNN
+F 1 "1.5k" V 3200 1200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3130 1200 50  0001 C CNN
+F 3 "" H 3200 1200 50  0000 C CNN
+	1    3200 1200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3100 7100 3150 7100
+	3350 1200 3400 1200
 $Comp
-L Device:LED_ALT D9
+L Circuit_layout-rescue:LED_ALT-Device D9
 U 1 1 5C6CE3EA
-P 3100 1000
-F 0 "D9" H 3100 1100 50  0000 C CNN
-F 1 "Drive_LED" H 3100 900 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 3100 1000 50  0001 C CNN
-F 3 "" H 3100 1000 50  0001 C CNN
-	1    3100 1000
-	1    0    0    -1  
+P 4500 1400
+F 0 "D9" H 4500 1500 50  0000 C CNN
+F 1 "Drive_LED" H 4500 1300 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 4500 1400 50  0001 C CNN
+F 3 "" H 4500 1400 50  0001 C CNN
+	1    4500 1400
+	-1   0    0    1   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R11
 U 1 1 5C6CE3F0
-P 3450 1000
-F 0 "R11" V 3530 1000 50  0000 C CNN
-F 1 "1.5k" V 3450 1000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3380 1000 50  0001 C CNN
-F 3 "" H 3450 1000 50  0000 C CNN
-	1    3450 1000
+P 4150 1400
+F 0 "R11" V 4230 1400 50  0000 C CNN
+F 1 "1.5k" V 4150 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4080 1400 50  0001 C CNN
+F 3 "" H 4150 1400 50  0000 C CNN
+	1    4150 1400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3250 1000 3300 1000
+	4300 1400 4350 1400
 Wire Wire Line
-	2950 1000 2900 1000
+	4000 1400 3950 1400
 Wire Wire Line
-	3200 1200 2900 1200
+	4250 1600 3950 1600
 Wire Wire Line
-	2900 1200 2900 1000
+	3950 1600 3950 1400
 Wire Wire Line
-	3600 1000 3650 1000
+	4650 1400 4700 1400
 Wire Wire Line
-	3650 1000 3650 1200
+	4700 1400 4700 1600
 Wire Wire Line
-	3650 1200 3300 1200
+	4700 1600 4350 1600
 $Comp
-L Device:LED_ALT D11
+L Circuit_layout-rescue:LED_ALT-Device D11
 U 1 1 5C6CF479
-P 3850 1050
-F 0 "D11" H 3850 1150 50  0000 C CNN
-F 1 "Spare_LED" H 3850 950 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 3850 1050 50  0001 C CNN
-F 3 "" H 3850 1050 50  0001 C CNN
-	1    3850 1050
-	1    0    0    -1  
+P 5550 1400
+F 0 "D11" H 5550 1500 50  0000 C CNN
+F 1 "Spare_LED" H 5550 1300 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 5550 1400 50  0001 C CNN
+F 3 "" H 5550 1400 50  0001 C CNN
+	1    5550 1400
+	-1   0    0    1   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R13
 U 1 1 5C6CF47F
-P 4200 1050
-F 0 "R13" V 4280 1050 50  0000 C CNN
-F 1 "1.5k" V 4200 1050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 1050 50  0001 C CNN
-F 3 "" H 4200 1050 50  0000 C CNN
-	1    4200 1050
+P 5200 1400
+F 0 "R13" V 5280 1400 50  0000 C CNN
+F 1 "1.5k" V 5200 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5130 1400 50  0001 C CNN
+F 3 "" H 5200 1400 50  0000 C CNN
+	1    5200 1400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4000 1050 4050 1050
+	5350 1400 5400 1400
 Wire Wire Line
-	3950 1200 3700 1200
+	5300 1550 5050 1550
 Wire Wire Line
-	3700 1200 3700 1050
+	5050 1550 5050 1400
 Wire Wire Line
-	4350 1050 4350 1200
+	5700 1400 5700 1550
 Wire Wire Line
-	4350 1200 4050 1200
+	5700 1550 5400 1550
 $Comp
-L Device:LED_ALT D12
+L Circuit_layout-rescue:LED_ALT-Device D12
 U 1 1 5C6CFBC0
-P 4700 950
-F 0 "D12" H 4700 1050 50  0000 C CNN
-F 1 "IMD_Fault_LED" H 4700 850 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 4700 950 50  0001 C CNN
-F 3 "" H 4700 950 50  0001 C CNN
-	1    4700 950 
-	1    0    0    -1  
+P 5500 800
+F 0 "D12" H 5500 900 50  0000 C CNN
+F 1 "IMD_Fault_LED" H 5500 650 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 5500 800 50  0001 C CNN
+F 3 "" H 5500 800 50  0001 C CNN
+	1    5500 800 
+	-1   0    0    1   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R14
 U 1 1 5C6CFBC6
-P 5050 950
-F 0 "R14" V 5130 950 50  0000 C CNN
-F 1 "1.5k" V 5050 950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4980 950 50  0001 C CNN
-F 3 "" H 5050 950 50  0000 C CNN
-	1    5050 950 
+P 5150 800
+F 0 "R14" V 5230 800 50  0000 C CNN
+F 1 "1.5k" V 5150 800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5080 800 50  0001 C CNN
+F 3 "" H 5150 800 50  0000 C CNN
+	1    5150 800 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4850 950  4900 950 
+	5300 800  5350 800 
 Wire Wire Line
-	4550 950  4500 950 
+	5000 800  4950 800 
 Wire Wire Line
-	4500 950  4500 1150
+	4950 800  4950 1000
 Wire Wire Line
-	4500 1150 4800 1150
+	4950 1000 5250 1000
 Wire Wire Line
-	4900 1150 5250 1150
+	5350 1000 5700 1000
 Wire Wire Line
-	5250 1150 5250 950 
+	5700 1000 5700 800 
 Wire Wire Line
-	5250 950  5200 950 
+	5700 800  5650 800 
 $Comp
-L Device:LED_ALT D13
+L Circuit_layout-rescue:LED_ALT-Device D13
 U 1 1 5C6D0040
-P 5500 1050
-F 0 "D13" H 5500 1150 50  0000 C CNN
-F 1 "TSAL_Cock_LED" H 5500 950 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 5500 1050 50  0001 C CNN
-F 3 "" H 5500 1050 50  0001 C CNN
-	1    5500 1050
-	1    0    0    -1  
+P 6500 800
+F 0 "D13" H 6500 900 50  0000 C CNN
+F 1 "TSAL_Cock_LED" H 6500 650 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 6500 800 50  0001 C CNN
+F 3 "" H 6500 800 50  0001 C CNN
+	1    6500 800 
+	-1   0    0    1   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R15
 U 1 1 5C6D0046
-P 5850 1050
-F 0 "R15" V 5930 1050 50  0000 C CNN
-F 1 "1.5k" V 5850 1050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5780 1050 50  0001 C CNN
-F 3 "" H 5850 1050 50  0000 C CNN
-	1    5850 1050
+P 6150 800
+F 0 "R15" V 6230 800 50  0000 C CNN
+F 1 "1.5k" V 6150 800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6080 800 50  0001 C CNN
+F 3 "" H 6150 800 50  0000 C CNN
+	1    6150 800 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5650 1050 5700 1050
+	6300 800  6350 800 
 Wire Wire Line
-	5350 1050 5300 1050
+	6000 800  5950 800 
 Wire Wire Line
-	5300 1050 5300 1200
+	5950 800  5950 950 
 Wire Wire Line
-	5300 1200 5600 1200
+	5950 950  6250 950 
 Wire Wire Line
-	5700 1200 6050 1200
+	6350 950  6700 950 
 Wire Wire Line
-	6050 1200 6050 1050
+	6700 950  6700 800 
 Wire Wire Line
-	6050 1050 6000 1050
-Wire Wire Line
-	3150 7400 3150 7250
-Wire Wire Line
-	3150 7250 3500 7250
-Wire Wire Line
-	3500 7250 3500 7100
-Wire Wire Line
-	3500 7100 3450 7100
-Wire Wire Line
-	3050 7400 3050 7250
-Wire Wire Line
-	3050 7250 2750 7250
-Wire Wire Line
-	2750 7250 2750 7100
-Wire Wire Line
-	2750 7100 2800 7100
+	6700 800  6650 800 
 $Comp
-L Device:LED_ALT D10
+L Circuit_layout-rescue:LED_ALT-Device D10
 U 1 1 5C6D1D2C
-P 3650 6350
-F 0 "D10" H 3650 6450 50  0000 C CNN
-F 1 "Brake_LED" H 3650 6250 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 3650 6350 50  0001 C CNN
-F 3 "" H 3650 6350 50  0001 C CNN
-	1    3650 6350
-	1    0    0    -1  
+P 5000 4100
+F 0 "D10" H 5000 4200 50  0000 C CNN
+F 1 "Brake_LED" H 5000 4000 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 5000 4100 50  0001 C CNN
+F 3 "" H 5000 4100 50  0001 C CNN
+	1    5000 4100
+	-1   0    0    1   
 $EndComp
 $Comp
 L TSI_HV_Isolater-cache:R R12
 U 1 1 5C6D1D32
-P 4000 6350
-F 0 "R12" V 4080 6350 50  0000 C CNN
-F 1 "1.5k" V 4000 6350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3930 6350 50  0001 C CNN
-F 3 "" H 4000 6350 50  0000 C CNN
-	1    4000 6350
+P 4650 4100
+F 0 "R12" V 4730 4100 50  0000 C CNN
+F 1 "1.5k" V 4650 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4580 4100 50  0001 C CNN
+F 3 "" H 4650 4100 50  0000 C CNN
+	1    4650 4100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3800 6350 3850 6350
+	4800 4100 4850 4100
 Wire Wire Line
-	3600 6650 3600 6500
+	4600 4400 4600 4250
 Wire Wire Line
-	3600 6500 3450 6500
+	4600 4250 4450 4250
 Wire Wire Line
-	3450 6500 3450 6350
+	4450 4250 4450 4100
 Wire Wire Line
-	3450 6350 3500 6350
+	4450 4100 4500 4100
 Wire Wire Line
-	3700 6650 3700 6500
+	4850 4400 4850 4250
 Wire Wire Line
-	3700 6500 4200 6500
+	4850 4250 5200 4250
 Wire Wire Line
-	4200 6500 4200 6350
+	5200 4250 5200 4100
 Wire Wire Line
-	4200 6350 4150 6350
-$Comp
-L Device:LED_ALT D8
-U 1 1 5C6D2C59
-P 3050 5550
-F 0 "D8" H 3050 5650 50  0000 C CNN
-F 1 "Safty_Loop_LED" H 3050 5450 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 3050 5550 50  0001 C CNN
-F 3 "" H 3050 5550 50  0001 C CNN
-	1    3050 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L TSI_HV_Isolater-cache:R R10
-U 1 1 5C6D2C5F
-P 3400 5550
-F 0 "R10" V 3480 5550 50  0000 C CNN
-F 1 "1.5k" V 3400 5550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3330 5550 50  0001 C CNN
-F 3 "" H 3400 5550 50  0000 C CNN
-	1    3400 5550
-	0    1    1    0   
-$EndComp
+	5200 4100 5150 4100
 Wire Wire Line
-	3200 5550 3250 5550
+	2350 6900 2350 6800
 Wire Wire Line
-	3000 5800 3000 5700
+	2350 6800 2200 6800
 Wire Wire Line
-	3000 5700 2850 5700
+	2200 6800 2200 6650
 Wire Wire Line
-	2850 5700 2850 5550
+	2200 6650 2250 6650
 Wire Wire Line
-	2850 5550 2900 5550
+	2450 6900 2450 6800
 Wire Wire Line
-	3100 5800 3100 5700
+	2450 6800 2950 6800
 Wire Wire Line
-	3100 5700 3600 5700
+	2950 6800 2950 6650
 Wire Wire Line
-	3600 5700 3600 5550
-Wire Wire Line
-	3600 5550 3550 5550
+	2950 6650 2900 6650
 $Comp
 L switches:SW_Push_Dual SW3
 U 1 1 5C6F13A3
-P 3700 650
-F 0 "SW3" H 3750 750 50  0000 L CNN
-F 1 "SW_Push_Dual" H 3700 380 50  0000 C CNN
-F 2 "custom_footprints:FSM4JSMATR" H 3700 850 50  0001 C CNN
-F 3 "" H 3700 850 50  0001 C CNN
-	1    3700 650 
+P 3400 700
+F 0 "SW3" H 3450 800 50  0000 L CNN
+F 1 "SW_Push_Dual" H 3400 430 50  0000 C CNN
+F 2 "custom_footprints:FSM4JSMATR" H 3400 900 50  0001 C CNN
+F 3 "" H 3400 900 50  0001 C CNN
+	1    3400 700 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 750  3500 650 
+	3200 800  3200 700 
 Wire Wire Line
-	3900 750  3900 850 
+	3600 800  3600 900 
 $Comp
 L switches:SW_Push_Dual SW1
 U 1 1 5C6F1A51
-P 3000 6550
-F 0 "SW1" H 3050 6650 50  0000 L CNN
-F 1 "SW_Push_Dual" H 3000 6280 50  0000 C CNN
-F 2 "custom_footprints:FSM4JSMATR" H 3000 6750 50  0001 C CNN
-F 3 "" H 3000 6750 50  0001 C CNN
-	1    3000 6550
+P 4050 4200
+F 0 "SW1" H 4100 4300 50  0000 L CNN
+F 1 "SW_Push_Dual" H 4050 3930 50  0000 C CNN
+F 2 "custom_footprints:FSM4JSMATR" H 4050 4400 50  0001 C CNN
+F 3 "" H 4050 4400 50  0001 C CNN
+	1    4050 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 6650 2800 6550
-Wire Wire Line
-	3200 6650 3200 6750
-Wire Wire Line
-	2950 2550 3200 2550
+	2650 3000 2800 3000
 $Comp
-L Device:Jumper_NC_Dual JP4
-U 1 1 5C7711FC
-P 3200 2900
-F 0 "JP4" H 3250 2800 50  0000 L CNN
-F 1 "Jumper_NC_Dual" H 3200 3000 50  0000 C BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3200 2900 50  0001 C CNN
-F 3 "" H 3200 2900 50  0001 C CNN
-	1    3200 2900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3500 3150 3200 3150
-Wire Wire Line
-	3200 2550 3200 2650
-Wire Wire Line
-	3100 2900 2850 2900
-Wire Wire Line
-	3050 2300 3200 2300
-$Comp
-L Device:Jumper_NC_Dual JP3
+L Circuit_layout-rescue:Jumper_NC_Dual-Device JP3
 U 1 1 5C77296F
-P 3000 1900
-F 0 "JP3" H 3050 1800 50  0000 L CNN
-F 1 "Jumper_NC_Dual" H 3000 2000 50  0000 C BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3000 1900 50  0001 C CNN
-F 3 "" H 3000 1900 50  0001 C CNN
-	1    3000 1900
+P 2600 2600
+F 0 "JP3" H 2650 2500 50  0000 L CNN
+F 1 "Jumper_NC_Dual" H 2600 2700 50  0001 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2600 2600 50  0001 C CNN
+F 3 "" H 2600 2600 50  0001 C CNN
+	1    2600 2600
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	2600 2100 2600 1900
+	2850 2600 2950 2600
 Wire Wire Line
-	2600 1900 2750 1900
+	2950 2600 2950 2800
 Wire Wire Line
-	3250 1900 3350 1900
-Wire Wire Line
-	3350 1900 3350 2100
-Wire Wire Line
-	3000 1800 3000 1600
-$Comp
-L Device:Jumper_NC_Dual JP6
-U 1 1 5C773F28
-P 4550 2700
-F 0 "JP6" H 4600 2600 50  0000 L CNN
-F 1 "Jumper_NC_Dual" H 4550 2800 50  0000 C BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4550 2700 50  0001 C CNN
-F 3 "" H 4550 2700 50  0001 C CNN
-	1    4550 2700
-	-1   0    0    -1  
-$EndComp
-Text Label 4550 3000 0    47   ~ 0
+	2600 2500 2600 2300
+Text Label 3900 3850 2    47   ~ 0
 APPS1_10
-Wire Wire Line
-	4900 2300 4900 2700
-Wire Wire Line
-	4900 2700 4800 2700
-Wire Wire Line
-	4150 2700 4300 2700
-Wire Wire Line
-	3600 2700 3850 2700
-Text Label 3050 2300 2    47   ~ 0
+Text Label 2650 3000 2    47   ~ 0
 APPS2_RTN
 Wire Wire Line
-	2800 2400 2350 2400
-Wire Wire Line
-	2350 2400 2350 2100
-Wire Wire Line
-	2350 2100 2600 2100
-Wire Wire Line
-	3700 2300 3600 2300
-Wire Wire Line
-	3600 2300 3600 2700
-Wire Wire Line
-	4550 2800 4550 3000
-Wire Wire Line
-	4000 2550 4000 2450
-Wire Wire Line
-	4000 2450 4450 2450
-Wire Wire Line
-	4450 2450 4450 1800
+	3300 3000 3200 3000
 $Comp
-L Device:Jumper_NC_Dual JP5
+L Circuit_layout-rescue:Jumper_NC_Dual-Device JP5
 U 1 1 5C7782DD
-P 4150 1800
-F 0 "JP5" H 4200 1700 50  0000 L CNN
-F 1 "Jumper_NC_Dual" H 4750 1700 50  0000 C BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4150 1800 50  0001 C CNN
-F 3 "" H 4150 1800 50  0001 C CNN
-	1    4150 1800
+P 3750 2600
+F 0 "JP5" H 3800 2500 50  0000 L CNN
+F 1 "Jumper_NC_Dual" H 4350 2500 50  0001 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3750 2600 50  0001 C CNN
+F 3 "" H 3750 2600 50  0001 C CNN
+	1    3750 2600
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	4450 1800 4400 1800
-Wire Wire Line
-	3850 1800 3900 1800
-Wire Wire Line
-	4150 1600 4150 1700
 Wire Wire Line
 	7650 1950 7650 2000
 Wire Wire Line
@@ -2157,21 +1891,15 @@ Wire Wire Line
 Wire Wire Line
 	9900 5450 10050 5450
 Wire Wire Line
-	750  5550 750  5650
+	1900 4550 1950 4550
 Wire Wire Line
-	3300 6650 3600 6650
+	1950 5250 1950 5350
 Wire Wire Line
-	2200 3750 2250 3750
+	1800 4750 1650 4750
 Wire Wire Line
-	2250 4450 2250 4550
+	5500 6250 5550 6250
 Wire Wire Line
-	2250 4550 2250 4850
-Wire Wire Line
-	2100 3950 1950 3950
-Wire Wire Line
-	5100 4800 5150 4800
-Wire Wire Line
-	5100 5850 5150 5850
+	5500 7300 5550 7300
 Wire Wire Line
 	8050 6050 8050 6300
 Wire Wire Line
@@ -2192,28 +1920,350 @@ RTN
 $Comp
 L TSI_HV_Isolater-cache:R R16
 U 1 1 5D8FA47F
-P 9400 1050
-F 0 "R16" V 9480 1050 50  0000 C CNN
-F 1 "1.5k" V 9400 1050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9330 1050 50  0001 C CNN
-F 3 "" H 9400 1050 50  0000 C CNN
-	1    9400 1050
+P 9450 700
+F 0 "R16" V 9530 700 50  0000 C CNN
+F 1 "1.5k" V 9450 700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9380 700 50  0001 C CNN
+F 3 "" H 9450 700 50  0000 C CNN
+	1    9450 700 
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8950 1150 9000 1150
+	9000 800  9050 800 
 Wire Wire Line
-	9400 900  9000 900 
+	9450 550  9050 550 
 Wire Wire Line
-	9000 900  9000 1050
-Connection ~ 9000 1050
+	9050 550  9050 700 
+Connection ~ 9050 700 
 Wire Wire Line
-	9000 1050 9050 1050
+	9050 700  9100 700 
 Wire Wire Line
-	9000 1150 9000 1200
+	9050 800  9050 850 
 Wire Wire Line
-	9000 1200 9400 1200
-Connection ~ 9000 1150
+	9050 850  9450 850 
+Connection ~ 9050 800 
 Wire Wire Line
-	9000 1150 9050 1150
+	9050 800  9100 800 
+Text Label 550  1700 0    47   ~ 0
+BP
+Wire Wire Line
+	900  1150 550  1150
+Wire Wire Line
+	900  1050 550  1050
+Wire Wire Line
+	900  750  550  750 
+Wire Wire Line
+	900  650  550  650 
+Text Label 550  1150 0    47   ~ 0
+RTN
+Text Label 550  1050 0    47   ~ 0
+24v
+NoConn ~ 900  950 
+NoConn ~ 900  850 
+Text Label 550  750  0    47   ~ 0
+CAN_L
+Text Label 550  650  0    47   ~ 0
+CAN_H
+$Comp
+L conn:Conn_01x06 J6
+U 1 1 5C51A1F8
+P 1100 850
+F 0 "J6" H 1100 1150 50  0000 C CNN
+F 1 "Conn_BoardJ36" H 1100 450 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 1100 850 50  0001 C CNN
+F 3 "" H 1100 850 50  0001 C CNN
+	1    1100 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  2950 550  2950
+Wire Wire Line
+	900  2850 550  2850
+Wire Wire Line
+	900  2750 550  2750
+Text Label 550  2950 0    47   ~ 0
+RTN
+Text Label 550  2850 0    47   ~ 0
+CAN_L
+Text Label 550  2750 0    47   ~ 0
+CAN_H
+NoConn ~ 900  3050
+$Comp
+L conn:Conn_01x04 J8
+U 1 1 5C51C8DE
+P 1100 2850
+F 0 "J8" H 1100 3050 50  0000 C CNN
+F 1 "Conn_BoardJ34" H 1100 2550 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 1100 2850 50  0001 C CNN
+F 3 "" H 1100 2850 50  0001 C CNN
+	1    1100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1600 550  1600
+Wire Wire Line
+	900  1500 550  1500
+Wire Wire Line
+	900  2400 550  2400
+Wire Wire Line
+	900  2300 550  2300
+Wire Wire Line
+	900  2200 550  2200
+Wire Wire Line
+	900  2100 550  2100
+Wire Wire Line
+	900  2000 550  2000
+Wire Wire Line
+	900  1900 550  1900
+Wire Wire Line
+	900  1700 550  1700
+$Comp
+L conn:Conn_01x10 J7
+U 1 1 5C5A9FF7
+P 1100 1900
+F 0 "J7" H 1100 2400 50  0000 C CNN
+F 1 "Conn_BoardJ3" H 1100 1300 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-10A_2x05x4.20mm_Straight" H 1100 1900 50  0001 C CNN
+F 3 "" H 1100 1900 50  0001 C CNN
+	1    1100 1900
+	1    0    0    -1  
+$EndComp
+Text Label 550  1600 0    47   ~ 0
+Brake_24
+Text Label 550  1500 0    47   ~ 0
+Brake_24
+Text Label 550  2400 0    47   ~ 0
+APPS2_RTN
+Text Label 550  2300 0    47   ~ 0
+APPS2
+Text Label 550  2200 0    47   ~ 0
+APPS2_5
+Text Label 550  2100 0    47   ~ 0
+APPS1_RTN
+Text Label 550  2000 0    47   ~ 0
+APPS1
+Text Label 550  1900 0    47   ~ 0
+APPS1_10
+NoConn ~ 900  1800
+Wire Wire Line
+	800  4900 800  5100
+Wire Wire Line
+	800  4900 900  4900
+Connection ~ 800  5100
+Wire Wire Line
+	800  5100 800  5200
+Wire Wire Line
+	800  5200 900  5200
+Wire Wire Line
+	800  4900 550  4900
+Connection ~ 800  4900
+Wire Wire Line
+	550  7250 900  7250
+Wire Wire Line
+	550  7350 900  7350
+Wire Wire Line
+	3700 1200 4100 1200
+Wire Wire Line
+	2750 1200 3050 1200
+Wire Wire Line
+	3500 4200 3850 4200
+Wire Wire Line
+	4250 4400 4600 4400
+Connection ~ 3350 4550
+$Comp
+L Circuit_layout-rescue:Jumper_NC_Dual-Device JP4
+U 1 1 5C7711FC
+P 2750 3250
+F 0 "JP4" H 2800 3150 50  0000 L CNN
+F 1 "Jumper_NC_Dual" H 3100 3050 50  0001 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2750 3250 50  0001 C CNN
+F 3 "" H 2750 3250 50  0001 C CNN
+	1    2750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3250 3100 3250
+Wire Wire Line
+	3100 3000 3100 3250
+$Comp
+L Circuit_layout-rescue:POT RV2
+U 1 1 5C527B0E
+P 4250 3000
+F 0 "RV2" V 4075 3000 50  0000 C CNN
+F 1 "APPS1_offset_10k" V 4150 3150 50  0000 C CNN
+F 2 "custom_footprints:3310C-5K-POT" H 4250 3000 50  0001 C CNN
+F 3 "" H 4250 3000 50  0001 C CNN
+	1    4250 3000
+	0    -1   -1   0   
+$EndComp
+Text Label 3700 3000 0    47   ~ 0
+APPS1_RTN
+Wire Wire Line
+	3700 3000 4100 3000
+Wire Wire Line
+	3500 2600 3450 2600
+$Comp
+L Circuit_layout-rescue:Jumper_NC_Dual-Device JP6
+U 1 1 5F9069DD
+P 3900 3250
+F 0 "JP6" H 3950 3150 50  0000 L CNN
+F 1 "Jumper_NC_Dual" H 4250 3000 50  0001 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3900 3250 50  0001 C CNN
+F 3 "" H 3900 3250 50  0001 C CNN
+	1    3900 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3250 3650 3000
+Wire Wire Line
+	3650 3000 3600 3000
+Wire Wire Line
+	3200 3000 3200 3250
+Wire Wire Line
+	4250 2600 4250 2850
+Wire Wire Line
+	4000 2600 4250 2600
+Wire Wire Line
+	3750 2300 3750 2500
+Wire Wire Line
+	2750 3350 2750 3600
+Wire Wire Line
+	3900 3350 3900 3600
+Wire Wire Line
+	2200 3100 2200 2600
+Wire Wire Line
+	2200 2600 2350 2600
+$Comp
+L conn:Conn_01x02 J16
+U 1 1 5FE5B34D
+P 1750 2700
+F 0 "J16" H 1750 2400 50  0000 C CNN
+F 1 "APPS2_External" H 1750 2500 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 1750 2700 50  0001 C CNN
+F 3 "~" H 1750 2700 50  0001 C CNN
+	1    1750 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x02 J17
+U 1 1 5FE5C08A
+P 4900 2700
+F 0 "J17" H 4850 2400 50  0000 L CNN
+F 1 "APPS1_External" H 4600 2500 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 4900 2700 50  0001 C CNN
+F 3 "~" H 4900 2700 50  0001 C CNN
+	1    4900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Circuit_layout-rescue:Jumper_NC_Dual-Device JP7
+U 1 1 5FEA1789
+P 2350 2300
+F 0 "JP7" H 2400 2200 50  0000 L CNN
+F 1 "Jumper_NC_Dual" H 2200 2400 50  0001 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2350 2300 50  0001 C CNN
+F 3 "" H 2350 2300 50  0001 C CNN
+	1    2350 2300
+	1    0    0    1   
+$EndComp
+$Comp
+L Circuit_layout-rescue:Jumper_NC_Dual-Device JP8
+U 1 1 5FEA2363
+P 4000 2300
+F 0 "JP8" H 4050 2200 50  0000 L CNN
+F 1 "Jumper_NC_Dual" H 4600 2200 50  0001 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4000 2300 50  0001 C CNN
+F 3 "" H 4000 2300 50  0001 C CNN
+	1    4000 2300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4700 2700 4650 2700
+Wire Wire Line
+	4650 2700 4650 2300
+Wire Wire Line
+	4650 2300 4250 2300
+Wire Wire Line
+	4650 2800 4650 3600
+Connection ~ 3900 3600
+Wire Wire Line
+	3900 3600 3900 3850
+Wire Wire Line
+	2750 3600 2000 3600
+Wire Wire Line
+	2000 3600 2000 2800
+Connection ~ 2750 3600
+Wire Wire Line
+	2750 3600 2750 3850
+Wire Wire Line
+	1950 2700 2000 2700
+Wire Wire Line
+	2000 2700 2000 2300
+Wire Wire Line
+	2000 2300 2100 2300
+Wire Wire Line
+	1950 2800 2000 2800
+Wire Wire Line
+	4650 3600 3900 3600
+Wire Wire Line
+	4700 2800 4650 2800
+Wire Wire Line
+	2350 2200 2350 2050
+Wire Wire Line
+	4000 2200 4000 2050
+Wire Wire Line
+	2350 3250 2500 3250
+Wire Wire Line
+	1500 3250 2050 3250
+Wire Wire Line
+	4400 3000 4550 3000
+Wire Wire Line
+	4550 3000 4550 3250
+Wire Wire Line
+	4550 3250 4150 3250
+Wire Wire Line
+	5300 1550 5300 1750
+Wire Wire Line
+	5400 1550 5400 1750
+Wire Wire Line
+	3350 4100 3350 4550
+Wire Wire Line
+	1650 4850 1650 4750
+Wire Wire Line
+	1650 5150 1650 5250
+Wire Wire Line
+	1650 5250 1850 5250
+Wire Wire Line
+	1850 5250 1850 4850
+Wire Wire Line
+	1950 5350 1950 5500
+Connection ~ 1950 5350
+Text Notes 4050 6050 0    39   ~ 0
+Change to MCP2561?
+Text Notes 3700 700  0    39   ~ 0
+Active low. Pull up on TSI board
+$Comp
+L Circuit_layout-rescue:LED_ALT-Device D8
+U 1 1 5C6D2C59
+P 2750 6650
+F 0 "D8" H 2750 6400 50  0000 C CNN
+F 1 "Safety_Loop_LED" H 2750 6500 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 2750 6650 50  0001 C CNN
+F 3 "" H 2750 6650 50  0001 C CNN
+	1    2750 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L TSI_HV_Isolater-cache:R R10
+U 1 1 5C6D2C5F
+P 2400 6650
+F 0 "R10" V 2480 6650 50  0000 C CNN
+F 1 "1.5k" V 2400 6650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2330 6650 50  0001 C CNN
+F 3 "" H 2400 6650 50  0000 C CNN
+	1    2400 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 6650 2550 6650
 $EndSCHEMATC
